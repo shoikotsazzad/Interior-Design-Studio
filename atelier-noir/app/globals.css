@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@config "../tailwind.config.ts";
+
+:root {
+  --black: #0D0D0D;
+  --charcoal: #1A1A1A;
+  --warm-white: #F5F2ED;
+  --gold: #B8A06A;
+  --gold-light: #D4BC8A;
+  --stone: #7A7468;
+  --divider: #2A2A2A;
+}
+
+@theme inline {
+  --color-black: #0D0D0D;
+  --color-charcoal: #1A1A1A;
+  --color-warm-white: #F5F2ED;
+  --color-gold: #B8A06A;
+  --color-gold-light: #D4BC8A;
+  --color-stone: #7A7468;
+  --color-divider: #2A2A2A;
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-cormorant: 'Cormorant', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #F5F2ED;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: none;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+@media (pointer: coarse) {
+  button {
+    cursor: pointer;
+  }
+}
+
+::selection {
+  background-color: #B8A06A;
+  color: #0D0D0D;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2A2A2A;
+}
